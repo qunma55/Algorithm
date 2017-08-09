@@ -27,7 +27,9 @@ public class Insertion_Sort {
      */
     private static void insertionSort(int[] R, int n) {
         for(int i = 1; i < n; i++) {
+            // 缓存插入的值
             int v = R[i];
+            // 从要插入值的上一个位置开始处理
             int j = i - 1;
             while (j >= 0 && R[j] > v) {
                 R[j+1] = R[j];
@@ -40,8 +42,8 @@ public class Insertion_Sort {
 
     /**
      * 打印数组
-     * @param R
-     * @param n
+     * @param R 数组
+     * @param n 元素个数
      */
     private static void printArray(int[] R, int n) {
         for(int i = 0; i < n; ++i) {
