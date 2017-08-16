@@ -20,3 +20,6 @@ site-content
 .classpath
 .project
 .externalToolBuilders
+
+lib/
+out/
